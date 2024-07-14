@@ -1,0 +1,19 @@
+@media screen and (min-width: 376px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: auto;
+    margin: 0 auto;
+    height: 100vh;
+    gap: 30px;
+  }
+  .container .card {
+    background-color: blue;
+  }
+  .container .card-item {
+    display: flex;
+    width: 350px;
+    background-color: green;
+  }
+}/*# sourceMappingURL=style.css.map */

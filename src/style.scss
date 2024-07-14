@@ -1,0 +1,46 @@
+$Mobile: 376px;
+$Desktop: 1440px;
+
+* {}
+
+@media screen and (min-width:$Mobile) {
+  .container {
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: auto;
+    margin: 0 auto;
+    height: 100vh;
+    gap: 30px;
+
+    .card {
+      background-color: blue;
+
+      .header {
+
+        .img-prf {}
+
+        span {}
+
+        h1 {}
+      }
+
+      a {}
+    }
+
+    .card-item {
+      display: flex;
+      width: 350px;
+      background-color: green;
+
+      .info {
+        .head {}
+
+        h1 {}
+
+        span {}
+      }
+    }
+  }
+}
