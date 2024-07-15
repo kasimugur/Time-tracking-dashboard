@@ -1,21 +1,61 @@
 $Mobile: 376px;
 $Desktop: 1440px;
+$Blue: hsl(246, 80%, 60%);
+$Light-orange : hsl(15, 100%, 70%);
+$Soft-blue : hsl(195, 74%, 62%);
+$Light-red : hsl(348, 100%, 68%);
+$Lime-green : hsl(145, 58%, 55%);
+$Violet: hsl(264, 64%, 52%);
+$Soft-orange : hsl(43, 84%, 65%);
+$Very-dark-blue: hsl(226, 43%, 10%);
+$Dark-blue: hsl(235, 46%, 20%);
+$Desaturated-blue: hsl(235, 45%, 61%);
+$Pale-Blue: hsl(236, 100%, 87%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-* {}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  // overflow: hidden;
+  padding: 20px;
+
+}
 
 @media screen and (min-width:$Mobile) {
   .container {
     // background-color: red;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: auto;
-    margin: 0 auto;
-    height: 100vh;
-    gap: 30px;
-
+    width: 100%;
+    .card-work{
+      background-color: $Light-orange;
+    }
+    .card-play{
+      background-color: $Soft-blue;
+    }
+    .card-study{
+      background-color: $Light-red;
+    }
+    .card-exercise{
+      background-color: $Lime-green;
+    }
+    .card-social{
+      background-color: $Violet;
+    }
+    .card-selfcare{
+      background-color: $Soft-orange;
+    }
     .card {
-      background-color: blue;
+      flex: 1;
+      padding: 20px;
+      margin-right: 20px;
+      text-align: center;
+      background-color: $Violet;
 
       .header {
 
@@ -26,15 +66,20 @@ $Desktop: 1440px;
         h1 {}
       }
 
-      a {}
+      a {
+        display: flex;
+        
+      }
     }
 
     .card-item {
-      display: flex;
-      width: 350px;
-      background-color: green;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      flex: 3;
+      gap: 20px;
 
       .info {
+        background-color: $Dark-blue;
         .head {}
 
         h1 {}

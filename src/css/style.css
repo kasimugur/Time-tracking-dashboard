@@ -1,19 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
 @media screen and (min-width: 376px) {
   .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: auto;
-    margin: 0 auto;
-    height: 100vh;
-    gap: 30px;
+    width: 100%;
+  }
+  .container .card-work {
+    background-color: hsl(15, 100%, 70%);
+  }
+  .container .card-play {
+    background-color: hsl(195, 74%, 62%);
+  }
+  .container .card-study {
+    background-color: hsl(348, 100%, 68%);
+  }
+  .container .card-exercise {
+    background-color: hsl(145, 58%, 55%);
+  }
+  .container .card-social {
+    background-color: hsl(264, 64%, 52%);
+  }
+  .container .card-selfcare {
+    background-color: hsl(43, 84%, 65%);
   }
   .container .card {
-    background-color: blue;
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: hsl(264, 64%, 52%);
+  }
+  .container .card a {
+    display: flex;
   }
   .container .card-item {
-    display: flex;
-    width: 350px;
-    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex: 3;
+    gap: 20px;
+  }
+  .container .card-item .info {
+    background-color: hsl(235, 46%, 20%);
   }
 }/*# sourceMappingURL=style.css.map */
