@@ -11,6 +11,7 @@ $Very-dark-blue: hsl(226, 43%, 10%);
 $Dark-blue: hsl(235, 46%, 20%);
 $Desaturated-blue: hsl(235, 45%, 61%);
 $Pale-Blue: hsl(236, 100%, 87%);
+
 * {
   margin: 0;
   padding: 0;
@@ -32,24 +33,31 @@ body {
     // background-color: red;
     display: flex;
     width: 100%;
-    .card-work{
+
+    .card-work {
       background-color: $Light-orange;
     }
-    .card-play{
+
+    .card-play {
       background-color: $Soft-blue;
     }
-    .card-study{
+
+    .card-study {
       background-color: $Light-red;
     }
-    .card-exercise{
+
+    .card-exercise {
       background-color: $Lime-green;
     }
-    .card-social{
+
+    .card-social {
       background-color: $Violet;
     }
-    .card-selfcare{
+
+    .card-selfcare {
       background-color: $Soft-orange;
     }
+
     .card {
       flex: 1;
       padding: 20px;
@@ -66,9 +74,9 @@ body {
         h1 {}
       }
 
-      a {
+      button {
         display: flex;
-        
+
       }
     }
 
@@ -80,7 +88,10 @@ body {
 
       .info {
         background-color: $Dark-blue;
-        .head {}
+        .head {
+          display: flex;
+          
+        }
 
         h1 {}
 

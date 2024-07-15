@@ -42,7 +42,7 @@ body {
     text-align: center;
     background-color: hsl(264, 64%, 52%);
   }
-  .container .card a {
+  .container .card button {
     display: flex;
   }
   .container .card-item {
@@ -53,5 +53,8 @@ body {
   }
   .container .card-item .info {
     background-color: hsl(235, 46%, 20%);
+  }
+  .container .card-item .info .head {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
