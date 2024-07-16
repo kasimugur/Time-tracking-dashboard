@@ -16,42 +16,82 @@ body {
   .container {
     display: flex;
     width: 100%;
+    height: 100%;
   }
   .container .card-work {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
     background-color: hsl(15, 100%, 70%);
   }
   .container .card-play {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
     background-color: hsl(195, 74%, 62%);
   }
   .container .card-study {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
     background-color: hsl(348, 100%, 68%);
   }
   .container .card-exercise {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
     background-color: hsl(145, 58%, 55%);
   }
   .container .card-social {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
     background-color: hsl(264, 64%, 52%);
   }
   .container .card-selfcare {
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
     background-color: hsl(43, 84%, 65%);
   }
   .container .card {
     flex: 1;
     padding: 20px;
     margin-right: 20px;
-    text-align: center;
+    text-align: start;
     background-color: hsl(264, 64%, 52%);
+    width: 250px;
+    border-radius: inherit;
   }
-  .container .card button {
+  .container .card .btn {
+    width: 100%;
+    height: 150px;
+    padding: 0 50px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+  }
+  .container .card .btn button {
     display: flex;
+  }
+  .container .card .header {
+    margin-top: 20px;
+  }
+  .container .card .header .img-prf {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    width: 100px;
+  }
+  .container .card .header span {
+    margin: 15px 0;
   }
   .container .card-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex: 3;
-    gap: 20px;
+    gap: 30px;
   }
   .container .card-item .info {
+    border-radius: 15px;
     background-color: hsl(235, 46%, 20%);
   }
   .container .card-item .info .head {
