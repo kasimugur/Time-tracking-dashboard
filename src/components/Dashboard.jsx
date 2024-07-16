@@ -16,8 +16,11 @@ export default function Dashboard() {
           <div className="card" onSubmit={(e) => e.preventDefault()} >
             <div className="header" >
               <img className="img-prf" src="src/images/image-jeremy.png" alt="profilo" />
+              
+              <div className="header-item">
               <span>Report for</span>
               <h1>Jeremy Robson</h1>
+              </div>
             </div >
           </div>
           <div className="butn">
@@ -38,8 +41,11 @@ export default function Dashboard() {
               <div className="head">
                 <h4>Work </h4> <span>{iconEllipsis} </span>
               </div>
+              <div className="box">
+                
               <h1>{data.map(e => e.title === "Work" && e.timeframes[dates].current)}hrs </h1>
               <span>Last Week - {data.map(e => e.title === "Work" && e.timeframes[dates].previous)}hrs</span>
+              </div>
             </div>
           </div>
           <div className="card-play">
@@ -50,8 +56,11 @@ export default function Dashboard() {
               <div className="head">
                 <h4>Play</h4><span>{iconEllipsis} </span>
               </div>
+              <div className="box">
+                
               <h1>{data.map(e => e.title === "Play" && e.timeframes[dates].current)}hrs</h1>
               <span>Last Week - {data.map(e => e.title === "Play" && e.timeframes[dates].previous)}hrs</span>
+              </div>
             </div>
           </div>
           <div className="card-study">
@@ -62,8 +71,11 @@ export default function Dashboard() {
               <div className="head">
                 <h4>Study</h4><span>{iconEllipsis} </span>
               </div>
+              <div className="box">
+                
               <h1>{data.map(e => e.title === "Study" && e.timeframes[dates].current)}hrs</h1>
               <span>Last Week - {data.map(e => e.title === "Study" && e.timeframes[dates].previous)}hrs</span>
+              </div>
             </div>
           </div>
           <div className="card-exercise">
@@ -74,8 +86,11 @@ export default function Dashboard() {
               <div className="head">
                 <h4>Exercise</h4><span>{iconEllipsis} </span>
               </div>
+              <div className="box">
+                
               <h1>{data.map(e => e.title === "Exercise" && e.timeframes[dates].current)}hrs</h1>
               <span>Last Week - {data.map(e => e.title === "Exercise" && e.timeframes[dates].previous)}hrs</span>
+              </div>
             </div>
           </div>
           <div className="card-social">
@@ -86,8 +101,11 @@ export default function Dashboard() {
               <div className="head">
                 <h4>Social</h4><span>{iconEllipsis} </span>
               </div>
+              <div className="box">
+                
               <h1>{data.map(e => e.title === "Social" && e.timeframes[dates].current)}hrs</h1>
               <span>Last Week - {data.map(e => e.title === "Social" && e.timeframes[dates].previous)}hrs</span>
+              </div>
             </div>
           </div>
           <div className="card-selfcare">
@@ -98,8 +116,10 @@ export default function Dashboard() {
               <div className="head">
                 <h4>Self Care</h4><span>{iconEllipsis} </span>
               </div>
+              <div className="box">
+                
               <h1>{data.map(e => e.title === "Self Care" && e.timeframes[dates].current)}hrs</h1>
-              <span>Last Week - {data.map(e => e.title === "Self Care" && e.timeframes[dates].previous)}hrs</span>
+              <span>Last Week - {data.map(e => e.title === "Self Care" && e.timeframes[dates].previous)}hrs</span></div>
             </div>
           </div>
         </div>
