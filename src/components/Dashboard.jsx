@@ -12,23 +12,28 @@ export default function Dashboard() {
   return (
     <>
       <div className="container" >
-        <div className="card" onSubmit={(e) => e.preventDefault()} >
-          <div className="header" >
-            <img className="img-prf" src="src/images/image-jeremy.png" alt="profilo" />
-            <span>Report for</span>
-            <h1>Jeremy Robson</h1>
-          </div >
-          <div className="btn">
-          <button onClick={() => setDates("daily")} href="">Daily</button>
-          <button onClick={() => setDates("weekly")} href="">Weekly</button>
-          <button onClick={() => setDates("monthly")} href="">Monthly</button>
+        <div className="btn">
+          <div className="card" onSubmit={(e) => e.preventDefault()} >
+            <div className="header" >
+              <img className="img-prf" src="src/images/image-jeremy.png" alt="profilo" />
+              <span>Report for</span>
+              <h1>Jeremy Robson</h1>
+            </div >
+          </div>
+          <div className="butn">
+
+            <button onClick={() => setDates("daily")} href="">Daily</button>
+            <button onClick={() => setDates("weekly")} href="">Weekly</button>
+            <button onClick={() => setDates("monthly")} href="">Monthly</button>
           </div>
         </div>
         <div className="card-item">
 
 
           <div className="card-work">
-            {iconWork}
+            <span>
+              {iconWork}
+            </span>
             <div className="info">
               <div className="head">
                 <h4>Work </h4> <span>{iconEllipsis} </span>
@@ -38,7 +43,9 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="card-play">
-            {iconPlay}
+            <span>
+              {iconPlay}
+            </span>
             <div className="info">
               <div className="head">
                 <h4>Play</h4><span>{iconEllipsis} </span>
@@ -48,7 +55,9 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="card-study">
-            {iconStudy}
+            <span>
+              {iconStudy}
+            </span>
             <div className="info">
               <div className="head">
                 <h4>Study</h4><span>{iconEllipsis} </span>
@@ -58,7 +67,9 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="card-exercise">
-            {iconExercise}
+            <span>
+              {iconExercise}
+            </span>
             <div className="info">
               <div className="head">
                 <h4>Exercise</h4><span>{iconEllipsis} </span>
@@ -68,7 +79,9 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="card-social">
-            {iconSocial}
+            <span>
+              {iconSocial}
+            </span>
             <div className="info">
               <div className="head">
                 <h4>Social</h4><span>{iconEllipsis} </span>
@@ -78,7 +91,9 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="card-selfcare">
-            {iconSelfCare}
+            <span>
+              {iconSelfCare}
+            </span>
             <div className="info">
               <div className="head">
                 <h4>Self Care</h4><span>{iconEllipsis} </span>

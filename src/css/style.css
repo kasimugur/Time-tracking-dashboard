@@ -23,66 +23,118 @@ body {
     width: 250px;
     height: 200px;
     background-color: hsl(15, 100%, 70%);
+    position: relative;
+  }
+  .container .card-work span {
+    display: flex;
+    justify-content: flex-end;
   }
   .container .card-play {
     border-radius: 15px;
     width: 250px;
     height: 200px;
+    position: relative;
     background-color: hsl(195, 74%, 62%);
+  }
+  .container .card-play span {
+    display: flex;
+    justify-content: flex-end;
   }
   .container .card-study {
     border-radius: 15px;
     width: 250px;
     height: 200px;
+    position: relative;
     background-color: hsl(348, 100%, 68%);
+  }
+  .container .card-study span {
+    display: flex;
+    justify-content: flex-end;
   }
   .container .card-exercise {
     border-radius: 15px;
     width: 250px;
     height: 200px;
+    position: relative;
     background-color: hsl(145, 58%, 55%);
+  }
+  .container .card-exercise span {
+    display: flex;
+    justify-content: flex-end;
   }
   .container .card-social {
     border-radius: 15px;
     width: 250px;
     height: 200px;
+    position: relative;
     background-color: hsl(264, 64%, 52%);
+  }
+  .container .card-social span {
+    display: flex;
+    justify-content: flex-end;
   }
   .container .card-selfcare {
     border-radius: 15px;
     width: 250px;
     height: 200px;
+    position: relative;
     background-color: hsl(43, 84%, 65%);
   }
-  .container .card {
-    flex: 1;
-    padding: 20px;
-    margin-right: 20px;
-    text-align: start;
-    background-color: hsl(264, 64%, 52%);
-    width: 250px;
-    border-radius: inherit;
-  }
-  .container .card .btn {
-    width: 100%;
-    height: 150px;
-    padding: 0 50px;
-    background-color: hsl(235, 46%, 20%);
-    border-radius: 15px;
-  }
-  .container .card .btn button {
+  .container .card-selfcare span {
     display: flex;
+    justify-content: flex-end;
   }
-  .container .card .header {
-    margin-top: 20px;
+  .container .btn {
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 15px;
+    position: relative;
+    background-color: hsl(235, 46%, 20%);
+    width: 230px;
+    height: 450px;
   }
-  .container .card .header .img-prf {
+  .container .btn .butn {
+    margin-left: 10px;
+  }
+  .container .btn .butn button {
+    text-align: start;
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    color: hsl(236, 100%, 87%);
+  }
+  .container .btn .butn button:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+  .container .btn .card {
+    width: 100%;
+    height: 70%;
+    border-radius: inherit;
+    background-color: hsl(246, 80%, 60%);
+  }
+  .container .btn .card .header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  .container .btn .card .header .img-prf {
+    margin-top: 15px;
     border: 5px solid #fff;
     border-radius: 50%;
-    width: 100px;
+    width: 70px;
   }
-  .container .card .header span {
-    margin: 15px 0;
+  .container .btn .card .header span {
+    margin-top: 25px;
+    color: hsl(236, 100%, 87%);
+  }
+  .container .btn .card .header h1 {
+    font-weight: lighter;
+    margin-top: 3px;
   }
   .container .card-item {
     display: grid;
@@ -91,10 +143,32 @@ body {
     gap: 30px;
   }
   .container .card-item .info {
-    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 78%;
+    top: 46px;
+    left: 0;
+    border-radius: inherit;
     background-color: hsl(235, 46%, 20%);
+  }
+  .container .card-item .info:hover {
+    cursor: pointer;
+    background-color: hsl(235, 45%, 61%);
   }
   .container .card-item .info .head {
     display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    align-items: center;
+  }
+  .container .card-item .info h1 {
+    margin-left: 40px;
+  }
+  .container .card-item .info span {
+    margin-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+    color: hsl(236, 100%, 87%);
   }
 }/*# sourceMappingURL=style.css.map */

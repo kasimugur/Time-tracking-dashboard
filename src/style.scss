@@ -40,84 +40,144 @@ body {
       width: 250px;
       height: 200px;
       background-color: $Light-orange;
+      position: relative;
+
+      span {
+        display: flex;
+        justify-content: flex-end;
+      }
     }
 
     .card-play {
+      span {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       border-radius: 15px;
       width: 250px;
       height: 200px;
-
+      position: relative;
       background-color: $Soft-blue;
     }
 
     .card-study {
+      span {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       border-radius: 15px;
       width: 250px;
       height: 200px;
+      position: relative;
 
       background-color: $Light-red;
     }
 
     .card-exercise {
+      span {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       border-radius: 15px;
       width: 250px;
       height: 200px;
+      position: relative;
 
       background-color: $Lime-green;
     }
 
     .card-social {
+      span {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       border-radius: 15px;
       width: 250px;
       height: 200px;
+      position: relative;
 
       background-color: $Violet;
     }
 
     .card-selfcare {
+      span {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       border-radius: 15px;
       width: 250px;
       height: 200px;
+      position: relative;
       background-color: $Soft-orange;
     }
 
-    .card {
+    .btn {
       flex: 1;
-      padding: 20px;
       margin-right: 20px;
-      text-align: start;
-      background-color: $Violet;
-      width: 250px;
-      border-radius: inherit;
+      border-radius: 15px;
+      position: relative;
+      background-color: $Dark-blue;
+      width: 230px;
+      height: 450px;
 
-      .btn {
-        
-        width: 100%;
-        height: 150px;
-        padding: 0 50px;
-        background-color: $Dark-blue;
-        border-radius: 15px;
+      .butn {
+        margin-left: 10px;
 
         button {
+          text-align: start;
+          background-color: $Dark-blue;
+          border: none;
+          width: 100%;
+          padding: 15px;
+          border-radius: 15px;
+          position: relative;
+          color: $Pale-Blue;
+
+          &:hover {
+            cursor: pointer;
+            color: #fff;
+          }
+        }
+      }
+
+      .card {
+        width: 100%;
+        height: 70%;
+        border-radius: inherit;
+        background-color: $Blue;
+        // position: absolute;
+        // left: 0;
+
+        .header {
           display: flex;
+          flex-direction: column;
+          padding: 10px;
+          margin-left: 20px;
+
+          .img-prf {
+            margin-top: 15px;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            width: 70px;
+          }
+
+          span {
+            margin-top: 25px;
+            color: $Pale-Blue;
+          }
+
+          h1 {
+            font-weight: lighter;
+            margin-top: 3px;
+          }
         }
+
       }
-      .header {
-        margin-top: 20px;
-        .img-prf {
-          border: 5px solid #fff;
-          border-radius: 50%;
-          width: 100px;
-        }
-
-        span {
-          margin: 15px 0;
-        }
-
-        h1 {}
-      }
-
-      
     }
 
     .card-item {
@@ -127,17 +187,38 @@ body {
       gap: 30px;
 
       .info {
-        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 78%;
+        top: 46px;
+        left: 0;
+        border-radius: inherit;
         background-color: $Dark-blue;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $Desaturated-blue;
+        }
 
         .head {
           display: flex;
-
+          justify-content: space-around;
+          margin: 10px 0;
+          align-items: center;
         }
 
-        h1 {}
+        h1 {
+          // font-weight: lighter;
+          margin-left: 40px;
+        }
 
-        span {}
+        span {
+          margin-top: 10px;
+          margin-left: 40px;
+          display: flex;
+          justify-content: flex-start;
+          color: $Pale-Blue;
+        }
       }
     }
   }
