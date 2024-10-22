@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import '../css/style.css'
+import '../style.scss'
 import { iconEllipsis, iconExercise, iconPlay, iconSelfCare, iconSocial, iconStudy, iconWork } from '../pages/Page'
 export default function Dashboard() {
   const [dates, setDates] = useState("weekly")
