@@ -271,9 +271,6 @@ body {
 }
 
 @media only screen and (max-width:531px) {
-  body {
-    background-color: rgb(33, 235, 15) !important;
-  }
 
   .card-item {
     grid-template-columns: repeat(1, 1fr) !important;

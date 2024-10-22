@@ -15,7 +15,7 @@ export default function Dashboard() {
         <div className="btn">
           <div className="card" onSubmit={(e) => e.preventDefault()} >
             <div className="header" >
-              <img className="img-prf" src="public/image-jeremy.png" alt="profilo" />
+              <img className="img-prf" src="src/images/image-jeremy.png" alt="profilo" />
               
               <div className="header-item">
               <span>Report for</span>
